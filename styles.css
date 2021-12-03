@@ -1,0 +1,565 @@
+*{
+  margin:0;
+  padding: 0;
+}
+.navbar{
+  border: none !important;
+  margin-bottom: 0!important;
+}
+.col-lg-12{
+  width: 100%;
+  height: auto !important;
+  border: none !important;
+  border-radius: none !important;
+  background-color: #b6cddb  !important;
+  font-size: 1.8em !important;
+  padding: 20px !important;
+} 
+
+.navbar-brand{
+  font-size: 1.8em !important;
+  color:rgb(1, 1, 63)  !important;
+  margin-left: 30px !important;
+}
+
+.navbar-brand:hover{
+  color: #252c94 !important;
+}
+
+.dropdown-toggle{
+  margin-right: 40px !important;
+  color:rgb(222, 221, 231)  !important;
+  background-color: rgba(255, 255, 255, 0.356) !important;
+}
+.dropdown-toggle:hover{
+  color: #e6b2c6 !important;
+}
+
+.dropdown-menu{
+  font-size: 1em;
+  text-align: left;
+  margin-right: 30px;
+  background-color: #c9d9e4 !important;
+}
+.dropdown-menu a:hover{
+  background-color: #bdc0f1 !important;;
+}
+
+.dropdown-menu a{
+  color: black !important;
+  font-weight: bolder;
+}
+
+.btnL{
+  padding: 10px;
+  font-size: 1em ;
+  color: white;
+  /* background: linear-gradient(90deg, #16d0e0, #0b7cbd, #16d0e0); */
+  background: linear-gradient(180deg, #f56969, #e05d8f) !important; 
+  border-radius: 20px ;
+  border: none !important;
+  margin-top: -10px;
+}
+
+
+@media only screen and (max-width: 585px){
+  .navbar{
+    margin: 0 !important;
+  }
+
+  .col-lg-12{
+    width: 100%;
+    font-size: 2 !important;
+    padding: 5px !important;
+  } 
+  
+  .navbar-brand{
+    font-size: 1.5em !important;
+    text-align: center;
+  }
+
+  .btnL{
+    margin-left: 40%;
+   
+  }
+  .dropdown-toggle{
+    width: 80px;
+    margin-left: 42%;
+    margin-bottom: 10px ;
+  }
+  .dropdown-menu{
+    text-align: center;
+    margin: 0;
+    width: 100%;
+    height: auto;
+  }
+}
+/*-------------Index------------*/
+.index{
+  position:absolute;
+  top:0;
+  left:0;
+  z-index: -1000;
+    width: 100%;
+    height: auto;
+}
+.index2{
+  display: none;
+}
+
+.type-add {
+    height: 300px;
+    /*This part is important for centering*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+  }
+  
+  .typing-demo {
+    width: 35ch;
+    animation: typing 3s steps(30), blink .5s step-end infinite alternate;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 3px solid;
+    font-family: monospace;
+    font-size: 3em;
+    font-weight: 900;
+  }
+  
+  @keyframes typing {
+    from {
+      width: 0
+    }
+  }
+      
+  @keyframes blink {
+    50% {
+      border-color: transparent
+    }
+  }
+
+
+  
+  /*-----------Index button Box---------*/
+  .buttonBox{
+    padding-left: 10%;
+    height: auto;
+    margin-top: -300px;
+  }
+
+.button a {
+color: rgba(255,255,255,0.5);
+font-size: 2rem;
+font-family: Inter, sans-serif;
+border-top: 1px solid rgba(255,255,255,0.2);
+display: block;
+padding: 1rem 1.5rem;
+float: left;
+width: 100%;
+}
+
+  .button {
+      box-shadow: none;
+      background: transparent;
+      width: 100px;
+      height: 100px;
+     font-family: Inter,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen,Ubuntu,Cantarell,Open Sans,Helvetica Neue,sans-serif;
+      transform-style: preserve-3d;
+      padding: 0;
+      height: auto;
+      float: none;
+      appearance: none;
+      border: none;
+      letter-spacing: 1px;
+      margin-left: 15%;
+      margin-right: 320px;
+      margin-top: 37%;
+  }
+
+  .button span {
+    width: 120px;
+    /* background: linear-gradient(90deg, #16d0e0, #0b7cbd, #16d0e0); */
+      background: linear-gradient(180deg, #ff4747, #e0417f);
+      font-size: 1.5em;
+      color: white;
+      padding: .5em .6em;
+      line-height: 1.2em;
+      will-change: transform, filter;
+      float: none;
+      margin: 0;
+      transition: all 0.15s ease-out;
+      height: auto;
+      border-radius: 100px;
+      overflow: hidden;
+      display: block;
+      margin: 0px auto;
+      display: block;
+      transform: rotateX(0deg) rotateY(0deg) scale(1);
+      filter: drop-shadow(0 15px 15px rgba(0,0,0,0.3));
+      font-weight: 500;
+      perspective-origin: 0 0;
+      letter-spacing: 0;
+  }
+
+  .button.animated span:after {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 600%;
+      height: 200%;
+      background: linear-gradient(90deg, #00a1ff, #af4ae6, #00a1ff, #2cefff);
+      animation: colorCycle 8s infinite alternate;
+      z-index: -1;
+  }
+  
+  .button.animated span {
+      filter: drop-shadow(0 15px 15px #00a1ff57);
+  }
+
+  .button.animated.example span:after {
+      width: 200%;
+      height: 100%;
+      animation: colorCycleExample 4s infinite alternate;
+  }
+  
+  @keyframes colorCycle {
+      0% {
+          top: 0;
+          left: 0;
+          transform: scale(1);
+      }
+      50% {
+          top: -50%;
+          transform: scale(1.4);
+      }
+      100% {
+          top: 0;
+          left: -500%;
+          transform: scale(1);
+      }
+  }
+
+  @keyframes colorCycleExample {
+      0% {
+          top: 0;
+          left: 0;
+          transform: scale(1);
+      }
+      100% {
+          top: 0;
+          left: -100%;
+          transform: scale(1);
+      }
+  }
+
+  @media screen and (max-width: 1000px) {
+      #dark-light-container > div {
+          width: 100%;
+      }
+  }
+
+
+  @media only screen and (max-width: 585px) {
+    .index{
+      display: none;
+  }
+  .index2{
+    display: block;
+    width: 100%;
+    height: 100%;
+    position:absolute;
+    top:0;
+    left:0;
+    z-index: -100;
+  }
+
+.type-add {
+    height: 100px;
+    /*This part is important for centering*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 60px;
+  }
+  
+  .typing-demo {
+    width: 35ch;
+    font-size: 1.5em;
+  }
+
+  /*-----------Index button Box---------*/
+  .button a {
+    font-size: 1em;
+    padding: .1em .4em;
+    }
+
+  .button span {
+    width: 100px;
+      font-size: 1.3em;
+      padding: .9em .4em;
+      line-height: 1.5em;
+      margin: 10px;
+  }
+  .button {
+    width: 100%;
+    height: 90%;
+    margin-left: 30%;
+    margin-top: 10%;
+}
+
+  }
+
+ 
+/*-----------profile page----------------------*/
+
+.profileInf{
+  width: 100%;
+  height: 200px;
+  border: solid 3px rgba(78, 78, 78, 0.486);
+  border-radius: 30px;
+  backdrop-filter: blur(30px);
+}
+
+#userphoto{
+  border-radius: 50%;
+  
+}
+#userphoto, #photoForm{
+  display: inline-block;
+  vertical-align: middle;
+  width: 50%;
+  margin: 1.2em;
+}
+
+.clips{
+  width: 67%;
+  height: 300px;
+  display: inline-flex;
+  border: solid 3px rgba(78, 78, 78, 0.486);
+  border-radius: 30px;
+  backdrop-filter: blur(30px);
+  margin-top: 10px;
+  margin-left: 10px;
+  text-align: center;
+}
+.contact{
+  width: 30%;
+  height: 300px;
+  display: inline-block;
+  border: solid 3px rgba(78, 78, 78, 0.486);
+  border-radius: 30px;
+  backdrop-filter: blur(30px);
+  margin-top: 10px;
+  margin-left: 10px;
+  text-align: center;
+}
+
+#searchBr{
+  margin: 0;
+  padding: 0%;
+  width: 80%;
+  text-align: center;
+  padding: 0;
+}
+
+#searchBr input{
+  height: 2.5em;
+  font-size: .9em;
+  text-align: center;
+  margin: 0;
+}
+
+h1{
+  font-size: 2em;
+  font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  color: #05076d;
+  text-align: center;
+}
+
+/*----------------Main Conent Pages -----------*/
+.box1{
+  background: linear-gradient(180deg, #aac3d1,#ffffff, #ffffff,  #ffffff); 
+  margin-top: 0;
+}
+.box5{
+    display: inline-block;
+    width: 45%;
+    height: 500px;
+    margin: 30px;
+    text-align: center;
+    border: solid 5px rgba(190, 188, 188, 0.493); 
+}
+
+.title-contbx{
+    text-align: center;
+    font-size: 4em;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: 500;
+    color: rgb(11, 5, 80) ;
+    background-color: rgba(173, 216, 230, 0.473);
+    width: auto;
+}
+
+
+@media only screen and (max-width: 585px) {
+  .box1{
+    margin-top: 0;
+  }
+
+  .box5{
+    display: block;
+    width: 100%;
+    height: 400px;
+    margin-top: 0px;
+    margin-left: 0;
+}
+
+.title-contbx{
+  text-align: center;
+  font-size: 2em;
+  width: 100%;
+  margin-top: 30px;
+}
+
+#button2{
+  margin-left: 30% !important;
+}
+
+.clips, .contact{
+  width: 98%;
+  height: 300px;
+  display: block;
+  margin-top: 10px;
+  margin-right: 1%;
+  margin-left: 1%;
+}
+.contact{
+  width: 98%;
+  height: 300px;
+  display: block;
+  backdrop-filter: blur(30px);
+}
+
+
+}
+/*--------------forms-----------------*/
+
+.sngupBox{
+  width: 100%;
+  height:auto;
+}
+
+.ftitle{
+  font-size: 3em;
+  font-family: cursive Verdana, Geneva, Tahoma, sans-serif;
+  padding: 20px;
+  color: #aa144e;
+}
+
+#login_form {
+  width: 600px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  box-sizing: border-box;
+  border: solid 3px rgba(184, 139, 180, 0.137);
+  padding: 30px;
+  backdrop-filter: blur(10px);
+  text-align: center;
+}
+
+input[type="text"] { 
+  width: calc(100% - 45px);
+  font-size: 30px;
+  padding: 10px 40px 10px 5px;
+  background-color: #c1bce48a;
+  background-size: 30px;
+  background-repeat: no-repeat;
+  background-position: right center;
+  border: 2px solid #bebebe;
+  border-radius: 5px;
+  margin-bottom: 5px;
+  outline: none;
+}
+
+input[name="pass"] {
+  background-size: 25px;
+  margin-bottom: 10px;
+}
+fieldset {
+  float: left;
+  padding: 0;
+  border: none;
+}
+input[type="checkbox"] {
+  display: none;
+}
+#checklabel {
+  float: left;
+  width: 30px;
+  height: 30px;
+  border: 2px solid #bebebe;
+  border-radius: 5px;
+  background-color: rgba(165, 89, 159, 0.466);
+
+}
+input[type="checkbox"]:checked + #checklabel {
+  background: url(https://cdn1.iconfinder.com/data/icons/onebit/PNG/onebit_34.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 30px;
+  background-color:  rgba(173, 6, 159, 0.678);
+}
+
+input[type="submit"] {
+  float: right;
+  border: 2px solid #bebebe;
+  border-radius: 5px;
+  padding: 8px;
+  background-color: rgb(96, 110, 170);
+  color: white;
+  font-family: Verdana;
+  cursor: pointer;
+}
+span {
+  margin-left: 10px;
+  font-family: Verdana;
+  color: #070505;
+  display: flex-box;
+  vertical-align: middle;
+}
+
+@media only screen and (max-width: 585px){
+  
+.ftitle{
+  font-size: 1.6em;
+  padding: 10px;
+}
+
+#login_form {
+  width: 90%;
+  position: absolute;
+  left: 10%;
+  top: 30%;
+  -webkit-transform: translate(-7%, -25%);
+  padding: 10px;
+
+}
+
+input[type="text"] { 
+  width: calc(100% - 15px);
+  font-size: 1.4em;
+  padding: 5px 15px 5px 1px;
+  background-size: 20px;
+}
+
+input[name="pass"] {
+  background-size: 55px;
+  margin-bottom: 10px;
+}
+}
+
+
